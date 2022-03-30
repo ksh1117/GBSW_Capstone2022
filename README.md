@@ -57,8 +57,5 @@ GbswHighSchool Capstone project
 
 
 ### 4. 기능 구현
-- 회원가입 및 로그인
-- 파일 업로드 (서버 저장)
-- 자신의 학습량 체크 (=깃허브의 잔디 혹은 그래프)
-- 공부한 언어에 따라 나누어 정렬(태그)
-
+### 1) 순서도
+![qq](https://user-images.githubusercontent.com/81201101/160827186-babae781-5313-4112-83e6-ba668feaecc1.png)

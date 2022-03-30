@@ -1,7 +1,4 @@
-# GBSW_Capstone2022
-GbswHighSchool Capstone project
-
-# 미정
+# LearnChart
 쉽게 접할 수 있는 포트폴리오 사이트
 
 ## 목차

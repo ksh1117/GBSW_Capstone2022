@@ -53,6 +53,12 @@ GbswHighSchool Capstone project
 
 
 ### 3. 데이터베이스 설계
+![DB설계](https://user-images.githubusercontent.com/81201101/160826491-e3d45be0-9e5a-4999-9bb9-3ba6fa9c6437.png)
 
 
 ### 4. 기능 구현
+- 회원가입 및 로그인
+- 파일 업로드 (서버 저장)
+- 자신의 학습량 체크 (=깃허브의 잔디 혹은 그래프)
+- 공부한 언어에 따라 나누어 정렬(태그)
+

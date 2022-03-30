@@ -33,6 +33,7 @@ GbswHighSchool Capstone project
 
 ## Ⅲ. 프로젝트 방법 및 과정
 ### 1. 개발 순서 구상
+![화면 캡처 2022-03-29 215427](https://user-images.githubusercontent.com/81201101/160825996-27719cfc-e088-47ed-8a85-4ed912721970.png)
 
 
 #### 1) 프로그램에 포함되어야 할 기능

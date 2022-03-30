@@ -42,6 +42,7 @@ GbswHighSchool Capstone project
 * 게시한 글을 기준을 나누어 정렬
 * 파일 업로드
 #### 2) 사용자 진행 순서도
+![qq](https://user-images.githubusercontent.com/81201101/160827186-babae781-5313-4112-83e6-ba668feaecc1.png)
 
 ### 2. 사용 기술 선정
 
@@ -57,5 +58,3 @@ GbswHighSchool Capstone project
 
 
 ### 4. 기능 구현
-### 1) 순서도
-![qq](https://user-images.githubusercontent.com/81201101/160827186-babae781-5313-4112-83e6-ba668feaecc1.png)

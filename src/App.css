@@ -1,0 +1,46 @@
+#root {
+  height: 100vh;
+}
+.center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.signippage, .Login {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  width: 350px;
+  border-radius: 10px;
+  margin: auto;
+  border: solid 1px #ccc;
+}
+.signippage h2, .Login h2 {
+  text-align: center;
+  color: black;
+}
+.signippage input, .Login input{
+  width: 300px;
+  height: 30px;
+  padding-left: 10px;
+  margin: 10px;
+  
+}
+.signippage button, .Login button{
+    background: #0bE6c1;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    height: 48px;
+    margin-top: 15px
+}
+.signippage button:hover{
+  background: #04c5a5;
+  color: white;
+}
+.Login button:hover{
+  background: #04c5a5;
+  color: white;
+}

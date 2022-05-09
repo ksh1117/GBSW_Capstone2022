@@ -13,8 +13,8 @@ const Login = () => {
   }
 
   return(
-    <div className="center">
-    <div className="Login">
+    <div className = "center">
+    <div className = "Login">
       <form>
       <h2>일단 캡스톤 로그인폼</h2>
       <div>

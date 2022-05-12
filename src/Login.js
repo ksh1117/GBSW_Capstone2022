@@ -11,6 +11,16 @@ const Login = () => {
   const onpwHandler = (e) => {
     setPw(e.currentTarget.value);
   }
+  const LoginCheck = (e) => {
+    if(id === ''){
+      alert('아이디를 입력하세요')
+      e.preventDefault()
+    }
+    if(pw === ''){
+      alert('비밀번호를 입력하세요');
+      e.preventDefault()
+    }
+  }
 
   return(
     <div className = "center">
@@ -25,7 +35,7 @@ const Login = () => {
       </div>
       <div>
       <Link to="/signup">
-        <button>로그인</button>
+        <button onClick={LoginCheck}>로그인</button>
       </Link>
       </div>
       </form>

@@ -1,11 +1,15 @@
-/* 데이터베이스 연결 */
-const mysql = require('mysql');
-const connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : '1234',
-  port     : '3307',
-  database : 'cloud'
-});
+const dotenv = require('dotenv');
+dotenv.config();
 
-module.exports = connection;
+const config = {
+  development : {
+    username : "root",
+    password : process.env.PASSWORD,
+    database : process.env.DATABASE,
+    host : process.env.HOST,
+    port : process.env.PORT,
+    dialect : "mysql"
+  }
+}
+
+module.exports = config;

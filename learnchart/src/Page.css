@@ -1,0 +1,26 @@
+.sort {
+    text-align: center;
+    width: 80%;
+    display: inline-block;
+}
+
+.img {
+    width: 1000px;
+    height: 400px;
+    display: inline-block;
+}
+
+.text {
+    width: 1000px;
+    height: 800px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.centerSort {
+    text-align: center;
+}
+
+.footerSort {
+    height: 300px;
+}

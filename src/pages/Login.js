@@ -1,7 +1,8 @@
 import React, {useState} from "react";
-import './App.css';
+import {Link} from "react-router-dom";
+import '../App.css';
 
-const Login = () => {
+export const Login = () => {
   const [id, setId] = useState('');
   const [pw, setPw] = useState('');
 
@@ -11,7 +12,6 @@ const Login = () => {
   const onpwHandler = (e) => {
     setPw(e.currentTarget.value);
   }
-  
 
   return(
     <div className = "center">
@@ -25,13 +25,12 @@ const Login = () => {
       <input type="password" value={pw} onChange = {onpwHandler} placeholder = "비밀번호" />
       </div>
       <div>
-
+        <Link to="/Mainpage">
         <button>로그인</button>
-
+        </Link>
       </div>
       </form>
       </div>
     </div>
   )
 }
-export default Login;

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import '../styles/App.css';
+import '../App.css';
 
-const Signup = () => {
+export const Signup = () => {
     const [id, setId] = useState('');
     const [pw, setPw] = useState('');
     const [pwCheck, setPwCheck] = useState('');
@@ -84,4 +84,3 @@ const Signup = () => {
         </div>
     )
 }
-export default Signup;

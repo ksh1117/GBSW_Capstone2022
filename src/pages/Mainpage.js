@@ -1,11 +1,11 @@
 import React from "react";
-import './Mainpage.css';
-import logoImg from './assets/logoImg.png';
-import profileImg from './assets/profileImg.png';
-import capstone from './assets/capstone.jpg'
-import menu from './assets/menu.png';
+import '../styles/Mainpage.css';
+import logoImg from '../assets/logoImg.png';
+import profileImg from '../assets/profileImg.png';
+import Capstone from '../assets/Capstone.jpg'
+import menu from '../assets/menu.png';
 
-const Mainpage = () => {
+export const Mainpage = () => {
   return (
     <div className="center1">
       <header>
@@ -30,7 +30,7 @@ const Mainpage = () => {
         <div className="postSort">
           <div class="post">
             <div className="postImg">
-              <img src={capstone} alt="타이틀 이미지" />
+              <img src={Capstone} alt="타이틀 이미지" />
             </div>
             <div className="text">
               C언어 1일차
@@ -104,5 +104,3 @@ const Mainpage = () => {
     </div>
   )
 }
-
-export default Mainpage;

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Form , Input , Checkbox , Button} from 'antd';
 
+
 const Join  = () =>{
     const [id,setId] = useState('');
     const [nick,setNick] = useState('');

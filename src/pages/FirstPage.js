@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import './firstPage.css';
+import '../styles/FirstPage.css';
 
 export const FirstPage = () => {
 
@@ -10,7 +10,7 @@ export const FirstPage = () => {
 
     return (
         <div className="center2">
-            <div className="header">
+            <div clasclsName="header">
 
                 <Link to="/Signup">
                     <button className="btn1" onClick={onClickHandler}>회원가입</button>

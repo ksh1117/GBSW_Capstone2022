@@ -1,21 +1,23 @@
+// import { render } from "@testing-library/react";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
+import { Component } from "react";
+import { FirstPage, Login, Mainpage, Mypage, Page, Signup, MyChart } from "./pages";
 
-import { Login } from "./pages/Login";
-import { Signup } from "./pages/Signup";
-import { FirstPage } from "./pages/FirstPage";
-import { Mainpage } from "./pages/Mainpage";
-
-function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<FirstPage />}></Route>
-        <Route path="/Login" element={<Login />}></Route>
-        <Route path="/Signup" element={<Signup />}></Route>
-        <Route path="/Mainpage" element={<Mainpage/>}></Route>
-      </Routes>
-    </BrowserRouter>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Routes>
+          <Route path="/" element={<FirstPage />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Signup" element={<Signup />} />
+          <Route path="/Mainpage" element={<Mainpage/>} />
+          <Route path="/MyChart" element={<MyChart/>} />
+        </Routes>
+      </div>
+    );
+  }
 };
 
 export default App;
+

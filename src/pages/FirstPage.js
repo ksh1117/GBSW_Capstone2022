@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import '../styles/FirstPage.css';
 
-export const FirstPage = () => {
+const FirstPage = () => {
 
     const onClickHandler = (e) => {
         console.log("페이지 이동을 하였습니다.");
@@ -31,3 +31,5 @@ export const FirstPage = () => {
         </div>
     )
 }
+
+export default FirstPage

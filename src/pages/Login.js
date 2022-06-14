@@ -1,16 +1,16 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
-import '../App.css';
+import '../styles/Login_Signup.css';
 
-export const Login = () => {
+const Login = () => {
   const [id, setId] = useState('');
   const [pw, setPw] = useState('');
 
   const onIdHandler = (e) => {
-    setId(e.currentTarget.value);
+    setId(e.target.value);
   }
   const onpwHandler = (e) => {
-    setPw(e.currentTarget.value);
+    setPw(e.target.value);
   }
 
   return(
@@ -34,3 +34,5 @@ export const Login = () => {
     </div>
   )
 }
+
+export default Login

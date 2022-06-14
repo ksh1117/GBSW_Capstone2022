@@ -1,7 +1,7 @@
-import React, {useState} from "react";
-import '../App.css';
+import React, {Profiler, useState} from "react";
+import '../styles/Login_Signup.css';
 
-export const Signup = () => {
+const Signup = () => {
     const [id, setId] = useState('');
     const [pw, setPw] = useState('');
     const [pwCheck, setPwCheck] = useState('');
@@ -42,7 +42,6 @@ export const Signup = () => {
                 <form>
                     <h2>Signup</h2>
                     <div>
-
                         <input className="Name" type="text" value={name} onChange={onNameHandler} placeholder="*이름"/><br/>
                     </div>
                     <div>
@@ -84,3 +83,5 @@ export const Signup = () => {
         </div>
     )
 }
+
+export default Signup

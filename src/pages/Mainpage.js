@@ -4,11 +4,45 @@ import logoImg from '../assets/logoImg.png';
 import profileImg from '../assets/profileImg.png';
 import Capstone from '../assets/Capstone.jpg'
 import menu from '../assets/menu.png';
+import Navbar from '../components/Navbar';
 
-export const Mainpage = () => {
+const data = [
+  {
+    id: 1,
+    src: Capstone,
+    title: 'title',
+  },
+  {
+    id: 2,
+    src: Capstone,
+    title: 'title',
+  },
+  {
+    id: 3,
+    src: Capstone,
+    title: 'title',
+  }, 
+  {
+    id: 4,
+    src: Capstone,
+    title: 'title',
+  },
+  {
+    id: 5,
+    src: Capstone,
+    title: 'title',
+  },
+  {
+    id: 6,
+    src: Capstone,
+    title: 'title',
+  },
+]
+
+const Mainpage = () => {
   return (
     <div className="center1">
-      <header>
+      {/* <header>
         <div className="lineImg">
           <div className="lineImgSort">
             <img src={menu} />
@@ -22,85 +56,30 @@ export const Mainpage = () => {
         <div className="profile">
             <img src={profileImg} alt="프로필" />
         </div>
-      </header>
+      </header> */}
 
-      <div className="headerSort"></div>
+      <Navbar />
+
+      <div className="headerSort"></div>  
 
       <div class="postDiv">
         <div className="postSort">
-          <div class="post">
-            <div className="postImg">
-              <img src={Capstone} alt="타이틀 이미지" />
-            </div>
-            <div className="text">
-              C언어 1일차
-            </div>
-          </div>
-
-          <div class="post">
-              <div className="postImg">
-                  이미지
+          {
+            data.map((post) => (
+              <div key={post.id} class="post">
+                <div className="postImg">
+                  <img src={post.src} alt="타이틀 이미지" />
+                </div>
+                <div className="text">
+                  {post.title}
+                </div>
               </div>
-              <div className="text">
-                  제목
-              </div>
-          </div>
-
-          <div class="post">
-              <div className="postImg">
-                  이미지
-              </div>
-              <div className="text">
-                  제목
-              </div>
-          </div>
-
-          <div class="post">
-              <div className="postImg">
-                  이미지
-              </div>
-              <div className="text">
-                  제목
-              </div>
-          </div>
-
-          <div class="post">
-              <div className="postImg">
-                  이미지
-              </div>
-              <div className="text">
-                  제목
-              </div>
-          </div>
-
-          <div class="post">
-              <div className="postImg">
-                  이미지
-              </div>
-              <div className="text">
-                  제목
-              </div>
-          </div>
-
-          <div class="post">
-              <div className="postImg">
-                  이미지
-              </div>
-              <div className="text">
-                  제목
-              </div>
-          </div>
-
-          <div class="post">
-              <div className="postImg">
-                  이미지
-              </div>
-              <div className="text">
-                  제목
-              </div>
-          </div>
+            ))
+          }
         </div>
       </div>
     </div>
   )
 }
+
+export default Mainpage

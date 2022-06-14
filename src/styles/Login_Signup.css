@@ -16,6 +16,7 @@
 
 .Login input,
 .signippage input {
+
     padding-top: 5px;
     padding-bottom: 5px;
     width: 300px;
@@ -42,4 +43,9 @@
 .Login button:hover {
     background: #5fbbb8;
     color: white;
+}
+.signippage img{
+    width: 50px;
+    height: 50px;
+    
 }

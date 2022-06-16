@@ -5,15 +5,15 @@ module.exports = class Post extends Sequelize.Model {
     return super.init({
       title: {
         type: Sequelize.STRING(150),
-        allowNull: true,
+        allowNull: false,
       },
       content : {
         type : Sequelize.TEXT,
-        allowNull: true,
+        allowNull: false,
       },
       img : {
         type: Sequelize.STRING(100),
-        allowNUll: false,
+        allowNUll: true,
       }
     }, {
       sequelize,

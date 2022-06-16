@@ -1,15 +1,33 @@
-const dotenv = require('dotenv');
+const dotenv = require('dotenv')
 dotenv.config();
+const env = process.env;
 
-const config = {
-  development : {
-    username : "root",
-    password : process.env.PASSWORD,
-    database : process.env.DATABASE,
-    host : process.env.HOST,
-    port : process.env.PORT,
-    dialect : "mysql"
-  }
-}
+const development = {
+  username: "root",
+  password: env.MYSQL_PASSWORD,
+  database: "capstonedb",
+  host: "localhost",
+  dialect: "mysql",
+  port: 3307,
+  timezone : "+09:00"
+};
 
-module.exports = config;
+const production = {
+  username: env.MYSQL_USERNAME,
+  password: env.MYSQL_PASSWORD,
+  database: env.MYSQL_DATABASE,
+  host: env.MYSQL_HOST,
+  dialect: "mysql",
+  //port: env.MYSQL_PORT
+};
+
+const test = {
+  username: env.MYSQL_USERNAME,
+  password: env.MYSQL_PASSWORD,
+  database: env.MYSQL_DATABASE_TEST,
+  host: env.MYSQL_HOST,
+  dialect: "mysql",
+  //port: env.MYSQL_PORT
+};
+
+module.exports = { development, production, test };

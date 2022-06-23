@@ -8,7 +8,7 @@ var storage = multer.diskStorage({
     },
     filename: function (req, file, cb) {
       cb(null, file.originalname)
-       // cb 콜백함수를 통해 전송된 파일 이름 설정
+       // 전송된 파일 이름 설정
     }
   })
 

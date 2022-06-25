@@ -10,7 +10,7 @@ const FirstPage = () => {
 
     return (
         <div className="center2">
-            <div clasclsName="header">
+            <div clasclsName="Header">
 
                 <Link to="/Signup">
                     <button className="btn1" onClick={onClickHandler}>회원가입</button>

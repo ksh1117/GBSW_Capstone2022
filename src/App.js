@@ -1,8 +1,8 @@
 // import { render } from "@testing-library/react";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import { Component } from "react";
-import { FirstPage, Login, Mainpage, Mypage, Page, Signup, MyChart } from "./pages";
-import WritingPage from "./pages/WritingPage";
+import { FirstPage, Login, Mainpage, Mypage, Signup } from "./pages";
+
 class App extends Component {
   render() {
     return (
@@ -12,7 +12,6 @@ class App extends Component {
           <Route path="/Login" element={<Login />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/Mainpage" element={<Mainpage/>} />
-          <Route path="/MyChart" element={<MyChart/>} />
           <Route path="/MyPage" element={<Mypage/>} />
         </Routes>
       </div>

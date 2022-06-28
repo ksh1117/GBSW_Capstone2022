@@ -30,7 +30,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    background-image: radial-gradient(ellipse farthest-corner at 0 140%, #5d9dff 0%, #2178ff 70%, #3585ff 70%);
+    background-color: gray;
 }
 .left h1 {
     color: white;
@@ -59,7 +59,7 @@
 }
 .right_login input {
     background: none;
-    border: none;
+    border-bottom: 1PX solid gray;
     line-height: 45px;
     padding-left: 10px;
     width: 267px;
@@ -84,7 +84,4 @@ span {
     color: gray;
     font-size: 11px;
     padding-right:20px;
-}
-hr { 
-    color: black;
 }

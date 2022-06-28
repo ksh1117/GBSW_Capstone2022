@@ -8,8 +8,7 @@ class App extends Component {
     return (
       <div>
         <Routes>
-          <Route path="/" element={<FirstPage />} />
-          <Route path="/Login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/Mainpage" element={<Mainpage/>} />
           <Route path="/MyPage" element={<Mypage/>} />

@@ -1,7 +1,5 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import '../styles/FirstPage.css';
-
 const FirstPage = () => {
 
     const onClickHandler = (e) => {
@@ -18,6 +16,7 @@ const FirstPage = () => {
                 <Link to="/Login">
                     <button className="btn2" onClick={onClickHandler}>로그인</button>
                 </Link> 
+
                 <h1>LearnChart</h1>
             </div>
             <div className="main">

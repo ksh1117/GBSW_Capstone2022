@@ -40,11 +40,10 @@ const Signup = () => {
         <div className="center">
             <div className="signippage">
                 <form>
-                    <h2>Signup</h2>
+                    <h2>회원가입</h2>
                     <div>
                         <input className="Name" type="text" value={name} onChange={onNameHandler} placeholder="*이름"/><br/>
-                    </div>
-                    <div>
+
                         <input
                             className="Id"
                             type="text"
@@ -53,8 +52,7 @@ const Signup = () => {
                             minLength='5'
                             maxLength='16'
                             placeholder="*아이디(5~16자)"/><br/>
-                    </div>
-                    <div>
+
                         <input
                             className="Pw"
                             type="password"
@@ -62,8 +60,6 @@ const Signup = () => {
                             onChange={onPwHandler}
                             maxLength='12'
                             placeholder="*비밀번호(1~12자)"/><br/>
-                    </div>
-                    <div>
                         <input
                             className="Cpw"
                             type="password"
@@ -71,11 +67,7 @@ const Signup = () => {
                             onChange={onCpwHandler}
                             maxLength='12'
                             placeholder="*비밀번호 확인"/><br/>
-                    </div>
-                    <div>
                         <input type="text" placeholder="생년월일(ex-2005.01.01)" value={bdate} onChange={onBdateHandler}/>
-                    </div>
-                    <div>
                         <button type="submit" onClick={onBtnClick}>회원 가입</button>
                     </div>
                 </form>
